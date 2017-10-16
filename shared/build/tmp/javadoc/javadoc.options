@@ -1,0 +1,7 @@
+-classpath '/Users/vasi/Desktop/gradle-example/shared/build/classes/java/main:/Users/vasi/Desktop/gradle-example/shared/build/resources/main'
+-d '/Users/vasi/Desktop/gradle-example/shared/build/docs/javadoc'
+-doctitle 'shared 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'shared 1.0-SNAPSHOT API'
+'/Users/vasi/Desktop/gradle-example/shared/src/main/java/org/gradle/shared/package-info.java'
+'/Users/vasi/Desktop/gradle-example/shared/src/main/java/org/gradle/shared/Person.java'
