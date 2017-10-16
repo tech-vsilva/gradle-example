@@ -73,7 +73,7 @@ configurations {
 }
 
 artifactory {
-  contextUrl = 'http://localhost:8081/artifactory'
+  contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
   publish {
     repository {
       repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
@@ -116,7 +116,7 @@ artifactory {
       repoKey = 'jcenter' // The Artifactory (preferably virtual) repository key to resolve from
       username = "${artifactory_user}" // Optional resolver user name (leave out to use anonymous resolution)
       password = "${artifactory_password}" // The resolver password
-      maven = true     
+      maven = true
     }
   }
 }
